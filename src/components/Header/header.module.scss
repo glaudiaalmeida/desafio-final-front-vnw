@@ -1,0 +1,57 @@
+header{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+}
+
+.boxLogo {
+    //border: solid 2px yellow;
+    width: 23vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        color: white;
+        font-size: 25px;
+    }
+}
+
+.boxMenu {
+    //border: solid 2px greenyellow;
+    width: 35vw;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+}
+
+.boxInput{
+    width: 14vw;
+    margin-right: 9em;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    input{
+        outline: none;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 15px;
+        &::placeholder{
+            color: white;
+        }
+    }
+}

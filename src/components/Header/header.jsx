@@ -1,25 +1,39 @@
+
+
 import logo from "../../assets/logo.png"
 import search from "../../assets/search.png"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import S from "../Header/header.module.scss"
+import Inicio from "../../Pages/Inicio/Inicio"
+import Doados from "../../Pages/Doados/Doados"
+import QueroDoar from "../../Pages/QueroDoar/QueroDoar"
 
 
-export default function Header() {
+export default function header() {
     return(
-        <header>
-            <section>
-                <img src={logo} alt="imagem de um livro" />
-                <h1>Livros Vai na Web</h1>
-            </section>
-            <nav>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Livros Doados</li>
-                    <li>Quero Doar</li>
-                </ul>
-            </nav>
-            <div>
-                <input type="text" />
-                <img src={search} alt="caixa de pesquisa" />
-            </div>
-        </header>
+        <BrowserRouter>
+            <header>
+                <section className={S.boxLogo}>
+                    <img src={logo} alt="imagem de um livro aberto" />
+                    <h1>Livros Vai na Web</h1>
+                </section>
+                <nav className={S.boxMenu}>
+                    <ul>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/doados">Livros Doados</Link></li>
+                        <li><Link to="/queroDoar">Quero Doar</Link></li>
+                    </ul>
+                </nav>
+                <div className={S.boxInput}>
+                    <input type="text" placeholder="O que você procura?" />
+                    <img src={search} alt="caixa de pesquisa" />
+                </div>
+            </header>
+            <Routes>
+                <Route path="/" element={<Inicio/>}/>
+                <Route path="/doados" element={<Doados/>}/>
+                <Route path="/queroDoar" element={<QueroDoar/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
