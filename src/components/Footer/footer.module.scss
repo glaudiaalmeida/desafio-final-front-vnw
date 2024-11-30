@@ -1,0 +1,21 @@
+
+
+.contactIcons{
+    height: 120px;
+    background:#005695;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h3{
+        font-size: 16px;
+        color: #FFFFFFDB;
+
+    }
+    nav{
+        border: solid;
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+               
+    }
+}

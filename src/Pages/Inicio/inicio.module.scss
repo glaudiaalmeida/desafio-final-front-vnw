@@ -1,14 +1,59 @@
 
-.inicio{
-    margin: 0;
-    padding: 0;
-}
 
-
-.post{
+.banner{
     background-image: url("../../assets/banner.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 40vh;
-    color: white;
+    display: flex;
+    align-items: center;
+    h2{
+        color: white;
+        margin-left: 80px;
+        display: flex;
+        width: 27vw;
+        text-align: center;
+    }
+    
 }
+
+.devoDoar {
+    height: 40vh;
+    div{
+        display: flex;
+        align-items: center;
+        h2{
+            color: #005695;
+            font-size: 30px;
+            margin-left: 60px;
+        }
+    }
+}
+
+.boxCard {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    article{
+        width: 20%;
+        height: 40%;
+        background-color: #0157944D;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        p{
+            text-align: center;
+            font-size: 14px;
+            width: 70%;
+        }
+    }
+    
+        
+}
+
