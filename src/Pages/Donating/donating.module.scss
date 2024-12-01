@@ -1,0 +1,52 @@
+.mainDonating{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    h2{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    border: solid 2px #005695;
+    border-radius: 1.2em;
+    width: 35vw;
+    height: 50vh;
+    flex-direction: column;
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #005695;
+        margin: 2em 0 2em 0;
+    }
+    input{
+        border-radius: .8em;
+        width: 30vw;
+        height: 2vh;
+        border: .2em solid #005695;
+        margin: 2em 0 0 2em;
+        padding: 1em;
+        outline: none;
+        &::placeholder{
+            color: black;
+        }
+    }    
+    .donate{
+        background: #005695;
+        color: #FFFFFF;
+        width: 15vw;
+        margin: 2em 0 0 6.5em;
+        font-size: 1em;
+        text-align: center;
+    }
+}

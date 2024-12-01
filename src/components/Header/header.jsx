@@ -4,9 +4,9 @@ import logo from "../../assets/logo.png"
 import search from "../../assets/search.png"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import S from "../Header/header.module.scss"
-import Inicio from "../../Pages/Inicio/inicio"
-import Doados from "../../Pages/Doados/doados"
-import QueroDoar from "../../Pages/QueroDoar/queroDoar"
+import Start from "../../Pages/Start/start"
+import Donated from "../../Pages/Donated/donated"
+import Donating from "../../Pages/Donating/donating"
 
 
 export default function header() {
@@ -20,8 +20,8 @@ export default function header() {
                 <nav className={S.boxMenu}>
                     <ul>
                         <li><Link to="/">Inicio</Link></li>
-                        <li><Link to="/doados">Livros Doados</Link></li>
-                        <li><Link to="/queroDoar">Quero Doar</Link></li>
+                        <li><Link to="/donate">Livros Doados</Link></li>
+                        <li><Link to="/donating">Quero Doar</Link></li>
                     </ul>
                 </nav>
                 <div className={S.boxInput}>
@@ -30,9 +30,9 @@ export default function header() {
                 </div>
             </header>
             <Routes>
-                <Route path="/" element={<Inicio/>}/>
-                <Route path="/doados" element={<Doados/>}/>
-                <Route path="/queroDoar" element={<QueroDoar/>}/>
+                <Route path="/" element={<Start/>}/>
+                <Route path="/donated" element={<Donated/>}/>
+                <Route path="/donating" element={<Donating/>}/>
             </Routes>
         </BrowserRouter>
     )
