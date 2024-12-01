@@ -9,7 +9,7 @@ import instagram from "../../assets/instagram.png"
 export default function Footer() {
     return(
         <footer>
-            <section className={S.contactIcons}>
+            <section className={S.boxContact}>
                 <h3>4002-8922</h3>
                 <nav>
                     <a href="https://www.facebook.com/"><img src={facebook} alt="Logo da rede social Facebook"/></a>
@@ -19,7 +19,7 @@ export default function Footer() {
                     <a href="https://www.instagram.com/"><img src={instagram} alt="Logo da rede social Instagram"/></a>
                 </nav>
             </section>
-            <section className={S.direitosAutorais}>
+            <section className={S.boxCopyright}>
                 <p>Layout desenvolvido pela Vai Na Web para fins educativos - 2024</p>
             </section>
         </footer>

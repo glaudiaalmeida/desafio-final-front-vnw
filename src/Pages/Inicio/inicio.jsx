@@ -4,13 +4,13 @@ import reading from "../../assets/reading.png"
 import transform from "../../assets/transform.png"
 import balance from "../../assets/balance.png"
 
-export default function Inicio() {
+export default function Start() {
     return(
         <section>
             <section className={S.banner}>
                 <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
             </section>
-            <section className={S.devoDoar}>
+            <section className={S.boxDonate}>
                 <div>
                     <h2>Por que devo doar?</h2>
                 </div>

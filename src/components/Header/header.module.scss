@@ -11,7 +11,7 @@ header{
 
 .boxLogo {
     //border: solid 2px yellow;
-    width: 23vw;
+    width: 28vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,11 +23,11 @@ header{
 
 .boxMenu {
     //border: solid 2px greenyellow;
-    width: 35vw;
+    width: 45vw;
     ul{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         a{
             color: white;
             font-size: 20px;
@@ -37,19 +37,19 @@ header{
 }
 
 .boxInput{
-    width: 14vw;
-    margin-right: 9em;
-    height: 6vh;
+    width: 26vw;
+    height: 2vh;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
+    //justify-content: space-between;
+    border-radius: 1.9em;
+    border: solid white .09em;
     input{
         outline: none;
         background-color: transparent;
         border: none;
         color: white;
-        font-size: 15px;
+        font-size: .9em;
+        text-align: center;
         &::placeholder{
             color: white;
         }

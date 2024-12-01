@@ -13,12 +13,11 @@
         display: flex;
         width: 27vw;
         text-align: center;
-    }
-    
+    }   
 }
 
-.devoDoar {
-    height: 40vh;
+.boxDonate {
+    height: 35vh;
     div{
         display: flex;
         align-items: center;
@@ -26,17 +25,18 @@
             color: #005695;
             font-size: 30px;
             margin-left: 60px;
+            margin-bottom: 2em;
         }
     }
 }
 
 .boxCard {
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: space-evenly;
     article{
-        width: 20%;
-        height: 40%;
+        width: 20vw;
+        height: 20vh;
         background-color: #0157944D;
         display: flex;
         align-items: center;
