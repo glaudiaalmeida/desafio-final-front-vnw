@@ -10,7 +10,7 @@ header{
 }
 
 .boxLogo {
-    width: 22vw;
+    width: 26vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,17 +35,18 @@ header{
 }
 
 .boxInput{
-    width: 22vw;
+    width: 20vw;
     height: 3vh;
     display: flex;
     border-radius: 1.9em;
     border: solid white .09em;
     input{
+        width: 14vw;
         outline: none;
         background-color: transparent;
         border: none;
         color: white;
-        font-size: .9em;
+        font-size: 2vw;
         text-align: center;
         &::placeholder{
             color: white;
@@ -53,8 +54,45 @@ header{
     }
     .boxSearch{
         width: 1.5vw;
-        height: 1.5vh;
-        margin: .4em 0 0 0;
+        height: 1.8vh;
+        margin: .2em 0 .2em 0;
     }
     
+}
+
+@media(max-width: 1334px){
+    .boxInput{
+        width: 20vw;
+        input{
+            &::placeholder{
+                font-size: 1.3vw;
+            }
+       }
+        .boxSearch{
+            width: 1.5vw;
+            height: 1.5vh;
+            margin: 12px 0 0 15px;
+        }
+    }
+}
+
+@media(max-width: 1003px){
+    .boxLogo{
+        //border: solid 2px red;
+        margin:0;
+        padding: 0;
+        width: 25vw;
+        h1{
+            font-size: 2.1vw;
+        }
+    }
+    img{
+        width: 5vw;
+    }
+    .boxMenu{
+        //border: solid 2px yellow;
+        ul{
+            font-size: 1.5vw;
+        }
+    }
 }
