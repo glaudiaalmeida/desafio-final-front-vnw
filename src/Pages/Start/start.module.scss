@@ -3,13 +3,13 @@
 .banner{
     background-image: url("../../assets/banner.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 40vh;
     display: flex;
     align-items: center;
     h2{
         color: white;
-        margin-left: 80px;
+        margin-left: 5em;
         display: flex;
         width: 27vw;
         text-align: center;
@@ -23,8 +23,8 @@
         align-items: center;
         h2{
             color: #005695;
-            font-size: 30px;
-            margin-left: 60px;
+            font-size: 1.8em;
+            margin-left: 3.7em;
             margin-bottom: 2em;
         }
     }
@@ -42,14 +42,14 @@
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        border-radius: 10px;
+        border-radius: .6em;
         img{
-            width: 70px;
-            height: 70px;
+            width: 7vw;
+            height: 7vh;
         }
         p{
             text-align: center;
-            font-size: 14px;
+            font-size: .9em;
             width: 70%;
         }
     }

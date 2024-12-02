@@ -20,13 +20,13 @@ export default function header() {
                 <nav className={S.boxMenu}>
                     <ul>
                         <li><Link to="/">Inicio</Link></li>
-                        <li><Link to="/donate">Livros Doados</Link></li>
+                        <li><Link to="/donated">Livros Doados</Link></li>
                         <li><Link to="/donating">Quero Doar</Link></li>
                     </ul>
                 </nav>
                 <div className={S.boxInput}>
                     <input type="text" placeholder="O que você procura?" />
-                    <img src={search} alt="caixa de pesquisa" />
+                    <img className={S.boxSearch} src={search} alt="lupa de pesquisa" />
                 </div>
             </header>
             <Routes>

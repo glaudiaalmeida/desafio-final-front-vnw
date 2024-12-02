@@ -1,0 +1,31 @@
+.boxdonated{
+    height: 70vh;
+    h2{
+        font-size: 32px;
+        text-align: center;
+        font-weight: 700;
+        margin: 1.5em;
+    }
+}
+
+.boxCard{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+ 
+}
+
+.boxBook{
+    border: 3px solid #005695;
+    width: 18vw;
+    height: 24vh;
+    border-radius: .8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    margin: 1em;
+ 
+}
